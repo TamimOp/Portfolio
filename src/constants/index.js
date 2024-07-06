@@ -1,7 +1,7 @@
 import {
-  mobile,
   backend,
-  creator,
+  react,
+  JSD,
   web,
   javascript,
   typescript,
@@ -15,14 +15,18 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  fiverr,
+  upwork,
+  freelancer,
+  brainwave,
+  hoobank,
+  restaurant,
+  nextjs,
+  linkedin,
+  instagram,
+  twitter,
+  facebook,
+  github,
 } from "../assets";
 
 export const navLinks = [
@@ -42,20 +46,20 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "Frontend Developer",
     icon: web,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "React Developer",
+    icon: react,
+  },
+  {
+    title: "JavaScript Expert",
+    icon: JSD,
   },
   {
     title: "Backend Developer",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -98,7 +102,7 @@ const technologies = [
   },
   {
     name: "Three JS",
-    icon: threejs,
+    icon: nextjs,
   },
   {
     name: "git",
@@ -117,51 +121,51 @@ const technologies = [
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    company_name: "Upwork",
+    icon: upwork,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Leading the development of scalable and responsive web applications using React.js, ensuring high performance and seamless user experiences.",
+      "Implementing robust front-end architectures and state management solutions with Redux for complex applications.",
+      "Collaborating closely with UX/UI designers to translate wireframes and prototypes into polished React components and interactive features.",
+      "Driving innovation by exploring and implementing new tools and libraries within the React ecosystem to enhance productivity and maintainability.",
+    ],
+  },
+  {
+    title: "Front-end Developer",
+    company_name: "Freelancer",
+    icon: freelancer,
+    iconBg: "#E6DEDD",
+    date: "Jan 2022 - Jan 2023",
+    points: [
+      "As a dynamic Front-end Developer, I spearhead the creation of captivating user interfaces and responsive web applications.",
+      "Armed with a robust skill set in HTML, CSS, and JavaScript, I adeptly implement innovative solutions using frameworks like React.js and Vue.js.",
+      "I lead projects from inception to deployment, optimizing performance and user experience with meticulous attention to detail.",
+      "Collaborating closely with cross-functional teams, I translate complex requirements into intuitive designs that drive user engagement and business success. ",
+    ],
+  },
+  {
+    title: "Shopify Developer",
+    company_name: "Fiverr",
+    icon: fiverr,
+    iconBg: "#383E56",
+    date: "Jan 2021 - Feb 2022",
+    points: [
+      "Developing and maintaining Ecommerce store using Shopify,Shogun,Pagefly and other related technologies.",
+      "Implementing custom solutions on Shopify and leveraging Shogun and Pagefly to maximize store performance and scalability.",
+      "Enhancing ecommerce functionality through strategic integration of Shopify apps and themes, boosting site usability and customer engagement.",
+      "Collaborating closely with clients to craft tailored ecommerce solutions that achieve business objectives and surpass customer expectations.",
+    ],
+  },
+  {
+    title: "Wordpress Developer",
+    company_name: "Fiverr",
+    icon: fiverr,
+    iconBg: "#E6DEDD",
+    date: "March 2020 - April 2021",
+    points: [
+      "Developing and maintaining web applications using Wordpress and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
       "Implementing responsive design and ensuring cross-browser compatibility.",
       "Participating in code reviews and providing constructive feedback to other developers.",
@@ -172,15 +176,15 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
+      "I thought it was impossible to make a website as beautiful as our product, but Tamim proved me wrong.",
+    name: "jrgenfredriksen",
     designation: "CFO",
-    company: "Acme Co",
+    company: "LOCTOTE",
     image: "https://randomuser.me/api/portraits/women/4.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      "I've never met a web developer who truly cares about their clients' success like Tamim does.",
     name: "Chris Brown",
     designation: "COO",
     company: "DEF Corp",
@@ -188,8 +192,8 @@ const testimonials = [
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
+      "Immediately understood the project and delivered exactly what was requested. Easy to communicate and prompt to reply. Highly recommended",
+    name: "yasalpaca",
     designation: "CTO",
     company: "456 Enterprises",
     image: "https://randomuser.me/api/portraits/women/6.jpg",
@@ -198,16 +202,16 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Brainwave",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "An open AI chat app website where upto 100 million people can explore the possibilities of AI chatting with Brainwave! ",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
@@ -215,41 +219,43 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: brainwave,
+    Deploy: "https://tamimop.github.io/Brainwave_Project/",
+    source_code_link: "https://github.com/TamimOp/Brainwave_Project",
   },
   {
-    name: "Job IT",
+    name: "HooBank",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "The next generation modern banking web app with eye catching design with 3800+ active users and $230M+ transaction!",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: hoobank,
+    Deploy: "https://tamimop.github.io/Bank_Modern_App/",
+    source_code_link: "https://github.com/TamimOp/Bank_Modern_App",
   },
   {
-    name: "Trip Guide",
+    name: "Gericht Restaurant",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A Fine dine restaurant's conspicuous web application to serve millions of customers!",
     tags: [
       {
-        name: "nextjs",
+        name: "reactjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "javascript",
         color: "green-text-gradient",
       },
       {
@@ -257,9 +263,42 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: restaurant,
+    Deploy: "https://tamimop.github.io/Gerich_Restaurant/",
+    source_code_link: "https://github.com/TamimOp/Gerich_Restaurant",
+  },
+];
+const socials = [
+  {
+    id: "0",
+    title: "Linkedin",
+    iconUrl: linkedin,
+    url: "https://www.linkedin.com/in/tamim-shad-anik-0a2a55293/",
+  },
+  {
+    id: "1",
+    title: "Github",
+    iconUrl: github,
+    url: "https://github.com/TamimOp",
+  },
+  {
+    id: "2",
+    title: "Instagram",
+    iconUrl: instagram,
+    url: "https://www.instagram.com/ig_tamimop/",
+  },
+  {
+    id: "3",
+    title: "Twitter",
+    iconUrl: twitter,
+    url: "https://x.com/tamimshadanik",
+  },
+  {
+    id: "4",
+    title: "Facebook",
+    iconUrl: facebook,
+    url: "https://www.facebook.com/Tamimshadaioush22/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, socials };

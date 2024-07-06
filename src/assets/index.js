@@ -1,12 +1,12 @@
 import logo from "./logo.svg";
 import favLogo from "./favLogo.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import react from "./React.png";
+import JSD from "./JavaScript.png";
+import backend from "./backend.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -20,23 +20,30 @@ import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import nextjs from "./tech/nextjs.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import upwork from "./company/upwork.png";
+import freelancer from "./company/freelancer.png";
+import fiverr from "./company/fiverr.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import brainwave from "./brainwave.png";
+import hoobank from "./hoobank.png";
+import restaurant from "./restaurant.png";
+
+import linkedin from "./socials/linkedin.svg";
+import facebook from "./socials/facebook.svg";
+import instagram from "./socials/instagram.svg";
+import twitter from "./socials/twitter.svg";
 
 export {
+  fiverr,
+  freelancer,
+  upwork,
+  backend,
+  JSD,
+  react,
   logo,
   favLogo,
-  backend,
-  creator,
-  mobile,
   web,
   github,
   menu,
@@ -53,12 +60,12 @@ export {
   redux,
   tailwind,
   typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  nextjs,
+  brainwave,
+  hoobank,
+  restaurant,
+  linkedin,
+  facebook,
+  instagram,
+  twitter,
 };
