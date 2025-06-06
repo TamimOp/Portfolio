@@ -83,7 +83,7 @@ const Works = () => {
   const hasMoreProjects = projects.length > 3;
 
   return (
-    <>
+    <section>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
@@ -130,8 +130,8 @@ const Works = () => {
           </motion.button>
         </div>
       )}
-    </>
+    </section>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
