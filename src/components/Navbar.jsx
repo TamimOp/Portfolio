@@ -38,8 +38,8 @@ const Navbar = () => {
             styles.paddingX
           } w-full flex items-center py-5 transition-all duration-700 ease-in-out ${
             scrolled
-              ? "bg-primary/90 backdrop-blur-xl rounded-2xl shadow-2xl shadow-primary/30 ring-1 ring-purple-500/30"
-              : "bg-primary"
+              ? "bg-primary/50 backdrop-blur-xl rounded-2xl shadow-2xl shadow-primary/30 ring-1 ring-purple-500/30"
+              : "bg-primary/50"
           }`}
         >
           <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
