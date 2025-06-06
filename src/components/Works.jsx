@@ -1,5 +1,6 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import { styles } from "../styles";
 import { github } from "../assets";
 import { SectionWrapper } from "../hoc";
@@ -16,7 +17,11 @@ const ProjectCard = ({
   Deploy,
 }) => {
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+    <motion.div
+      variants={fadeIn("up", "spring", index * 0.2, 0.75)}
+      initial="hidden"
+      animate="show"
+    >
       <Tilt
         options={{
           max: 45,
@@ -27,7 +32,7 @@ const ProjectCard = ({
       >
         <div
           onClick={() => window.open(Deploy, "_blank")}
-          className="relative w-full h-[230px]"
+          className="relative w-full h-[230px] cursor-pointer"
         >
           <img
             src={image}
@@ -37,7 +42,10 @@ const ProjectCard = ({
 
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
             <div
-              onClick={() => window.open(source_code_link, "_blank")}
+              onClick={(e) => {
+                e.stopPropagation();
+                window.open(source_code_link, "_blank");
+              }}
               className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer"
             >
               <img
@@ -70,6 +78,10 @@ const ProjectCard = ({
 };
 
 const Works = () => {
+  const [showAll, setShowAll] = useState(false);
+  const displayedProjects = showAll ? projects : projects.slice(0, 3);
+  const hasMoreProjects = projects.length > 3;
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -91,10 +103,33 @@ const Works = () => {
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+        {displayedProjects.map((project, index) => (
+          <div key={`project-wrapper-${index}`}>
+            <ProjectCard index={index} {...project} />
+          </div>
         ))}
       </div>
+
+      {hasMoreProjects && (
+        <div className="mt-12 flex justify-center">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => setShowAll(!showAll)}
+            className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary hover:bg-[#151030] transition-all duration-300"
+          >
+            <span className="flex items-center gap-2">
+              {showAll ? "Show Less" : "See More Projects"}
+              <motion.span
+                animate={{ rotate: showAll ? 180 : 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                ↓
+              </motion.span>
+            </span>
+          </motion.button>
+        </div>
+      )}
     </>
   );
 };
