@@ -25,6 +25,8 @@ import nextjs from "./tech/nextjs.png";
 import upwork from "./company/upwork.png";
 import freelancer from "./company/freelancer.png";
 import fiverr from "./company/fiverr.png";
+import Itransition from "./company/Itransition.jpeg";
+import WebDevXioLogo from "./company/WebDevXioLogo.png";
 
 import brainwave from "./brainwave.png";
 import hoobank from "./hoobank.png";
@@ -76,4 +78,6 @@ export {
   Hilink,
   GreenCart,
   SaaS,
+  Itransition,
+  WebDevXioLogo,
 };

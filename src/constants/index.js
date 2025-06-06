@@ -31,6 +31,8 @@ import {
   Hilink,
   GreenCart,
   SaaS,
+  Itransition,
+  WebDevXioLogo,
 } from "../assets";
 
 export const navLinks = [
@@ -124,11 +126,37 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Frontend Developer",
+    company_name: "WebDevXio",
+    icon: WebDevXioLogo,
+    iconBg: "#E6DEDD",
+    date: "May 2025 - Present",
+    points: [
+      "Developing cutting-edge SaaS applications and client solutions using Next.js, React.js, and modern frontend technologies.",
+      "Building responsive, high-performance user interfaces for SaaS platforms with focus on user experience and conversion optimization.",
+      "Collaborating with design and backend teams to implement pixel-perfect designs and seamless API integrations.",
+      "Optimizing application performance, implementing SEO best practices, and ensuring cross-browser compatibility for SaaS products.",
+    ],
+  },
+  {
+    title: "Full Stack Developer",
+    company_name: "Itransition",
+    icon: Itransition,
+    iconBg: "#E6DEDD",
+    date: "Sep 2024 - Mar 2025",
+    points: [
+      "Developed comprehensive full-stack solutions including multiple landing pages and complex web applications using React.js and Node.js.",
+      "Created a sophisticated Google Forms-type website with dynamic form generation, data collection, and analytics features.",
+      "Worked on diverse client projects ranging from corporate websites to interactive web applications, ensuring responsive design and optimal performance.",
+      "Collaborated with cross-functional teams to deliver projects on time while maintaining high code quality and following industry best practices.",
+    ],
+  },
+  {
     title: "React.js Developer",
     company_name: "Upwork",
     icon: upwork,
     iconBg: "#383E56",
-    date: "Jan 2023 - Present",
+    date: "Jan 2023 - Aug 2024",
     points: [
       "Leading the development of scalable and responsive web applications using React.js, ensuring high performance and seamless user experiences.",
       "Implementing robust front-end architectures and state management solutions with Redux for complex applications.",
@@ -146,7 +174,7 @@ const experiences = [
       "As a dynamic Front-end Developer, I spearhead the creation of captivating user interfaces and responsive web applications.",
       "Armed with a robust skill set in HTML, CSS, and JavaScript, I adeptly implement innovative solutions using frameworks like React.js and Vue.js.",
       "I lead projects from inception to deployment, optimizing performance and user experience with meticulous attention to detail.",
-      "Collaborating closely with cross-functional teams, I translate complex requirements into intuitive designs that drive user engagement and business success. ",
+      "Collaborating closely with cross-functional teams, I translate complex requirements into intuitive designs that drive user engagement and business success.",
     ],
   },
   {
