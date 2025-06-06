@@ -1,7 +1,5 @@
-import React from "react";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { Suspense } from "react";
 import { ComputersCanvas } from "./canvas";
 
 const Hero = () => {
@@ -16,7 +14,7 @@ const Hero = () => {
         </div>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <br />{" "}
+            Hi, I&#39;m <br />{" "}
             <span className="text-[#915eff]">Tamim Shad Anik</span>
           </h1>
           <p className={`${styles.heroSubText} mt-4 text-white-100`}>

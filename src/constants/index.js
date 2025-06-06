@@ -27,6 +27,10 @@ import {
   twitter,
   facebook,
   github,
+  WebDevXio,
+  Hilink,
+  GreenCart,
+  SaaS,
 } from "../assets";
 
 export const navLinks = [
@@ -207,15 +211,15 @@ const projects = [
       "An open AI chat app website where upto 100 million people can explore the possibilities of AI chatting with Brainwave! ",
     tags: [
       {
-        name: "react",
+        name: "ReactJs",
         color: "blue-text-gradient",
       },
       {
-        name: "javascript",
+        name: "Javascript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
@@ -229,15 +233,15 @@ const projects = [
       "The next generation modern banking web app with eye catching design with 3800+ active users and $230M+ transaction!",
     tags: [
       {
-        name: "react",
+        name: "ReactJs",
         color: "blue-text-gradient",
       },
       {
-        name: "javascript",
+        name: "Javascript",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
@@ -251,21 +255,109 @@ const projects = [
       "A Fine dine restaurant's conspicuous web application to serve millions of customers!",
     tags: [
       {
-        name: "reactjs",
+        name: "ReactJs",
         color: "blue-text-gradient",
       },
       {
-        name: "javascript",
+        name: "Javascript",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "CSS",
         color: "pink-text-gradient",
       },
     ],
     image: restaurant,
     Deploy: "https://tamimop.github.io/Gerich_Restaurant/",
     source_code_link: "https://github.com/TamimOp/Gerich_Restaurant",
+  },
+  {
+    name: "WebDevXio",
+    description:
+      "An Expert Web Design and Development Agency Achieving Results. Specialize in creating stunning, high-performing websites that elevate your brand and drive measurable results. ",
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NextJs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: WebDevXio,
+    Deploy: "https://web-dev-xio.vercel.app/",
+    source_code_link: "https://github.com/TamimOp/WebDevXio",
+  },
+  {
+    name: "Hilink",
+    description:
+      "Hilink is a modern, user-centric travel website designed to inspire and simplify travel planning. Built with a responsive layout and seamless navigation, Hilink helps users explore destinations, book tours, and find travel inspiration with ease. ",
+    tags: [
+      {
+        name: "NextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: Hilink,
+    Deploy: "https://rococo-twilight-2b9202.netlify.app/",
+    source_code_link: "https://github.com/TamimOp/Travel_Website",
+  },
+  {
+    name: "GreenCart",
+    description:
+      "An Smart Online Grocery Solution.GreenCart is a clean and efficient web application designed to simplify the online grocery shopping experience. It offers a user-friendly interface, organized product categories, and a seamless cart and checkout process—making grocery shopping faster and more convenient.",
+    tags: [
+      {
+        name: "ReactJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "JavaScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: GreenCart,
+    Deploy: "https://green-cart-psi-two.vercel.app/",
+    source_code_link: "https://github.com/TamimOp/GreenCart",
+  },
+  {
+    name: "SaaS Landing Page",
+    description:
+      "This is a sleek and responsive landing page designed for a SaaS product, focused on driving user engagement and conversions. It combines modern UI design with strategic layout elements to effectively communicate product value and capture user interest.",
+    tags: [
+      {
+        name: "NextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Typescript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: SaaS,
+    Deploy: "https://saas-landingpage-website.netlify.app/",
+    source_code_link: "https://github.com/TamimOp/saas_landing_page",
   },
 ];
 const socials = [

@@ -34,6 +34,10 @@ import linkedin from "./socials/linkedin.svg";
 import facebook from "./socials/facebook.svg";
 import instagram from "./socials/instagram.svg";
 import twitter from "./socials/twitter.svg";
+import WebDevXio from "./WebDevXio.png";
+import Hilink from "./Hilink.png";
+import GreenCart from "./GreenCart.png";
+import SaaS from "./SaaS.png";
 
 export {
   fiverr,
@@ -68,4 +72,8 @@ export {
   facebook,
   instagram,
   twitter,
+  WebDevXio,
+  Hilink,
+  GreenCart,
+  SaaS,
 };
