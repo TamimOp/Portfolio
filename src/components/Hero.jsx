@@ -147,7 +147,7 @@ const Hero = () => {
 
       {/* Enhanced scroll indicator */}
       <motion.div
-        className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-20"
+        className="absolute xs:-bottom-4 bottom-5 w-full flex justify-center items-center z-10"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, delay: 1 }}
