@@ -31,10 +31,17 @@ const Contact = () => {
     e.preventDefault();
     setLoading(true);
 
+    // Add validation
+    if (!form.name || !form.email || !form.message) {
+      setLoading(false);
+      alert("Please fill in all fields.");
+      return;
+    }
+
     emailjs
       .send(
-        "service_se9uifw",
-        "template_o4qyvpq",
+        import.meta.env.VITE_EMAILJS_SERVICE_ID || "service_se9uifw",
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID || "template_o4qyvpq",
         {
           from_name: form.name,
           to_name: "Tamim Shad Anik",
@@ -42,7 +49,7 @@ const Contact = () => {
           to_email: "tamimshadanik@gmail.com",
           message: form.message,
         },
-        "6cWCGin5Mc1ef9nN-"
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY || "6cWCGin5Mc1ef9nN-"
       )
       .then(
         () => {
@@ -57,9 +64,18 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-          console.error(error);
+          console.error("EmailJS Error:", error);
 
-          alert("Ahh, something went wrong. Please try again.");
+          // More specific error handling
+          if (error.status === 422) {
+            alert("Please check your email format and try again.");
+          } else if (error.status === 400) {
+            alert(
+              "Service configuration error. Please contact the administrator."
+            );
+          } else {
+            alert("Network error. Please check your connection and try again.");
+          }
         }
       );
   };
