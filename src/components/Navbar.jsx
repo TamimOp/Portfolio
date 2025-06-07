@@ -55,7 +55,7 @@ const Navbar = () => {
                 <img
                   src={logo}
                   alt="logo"
-                  className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
+                  className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 object-contain transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6 filter invert"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full opacity-0 group-hover:opacity-20 transition-opacity duration-300 blur-md"></div>
               </div>
