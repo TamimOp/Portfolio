@@ -1,8 +1,22 @@
 import { motion } from "framer-motion";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+
+const ComputersCanvas = lazy(() => import("./canvas/Computers"));
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {
@@ -12,31 +26,34 @@ const Hero = () => {
 
   return (
     <section className="relative w-full min-h-screen sm:h-[120vh] mx-auto">
-      {/* Animated background gradient - behind everything */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-blue-900/10 to-black/20 animate-pulse pointer-events-none" />
+      {/* Reduced animations for mobile */}
+      {!isMobile && (
+        <>
+          <div className="absolute inset-0 bg-gradient-to-br from-purple-900/10 via-blue-900/10 to-black/20 animate-pulse pointer-events-none" />
 
-      {/* Floating particles effect - behind content */}
-      <div className="absolute inset-0 pointer-events-none">
-        {[...Array(30)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="absolute w-1 h-1 bg-white/20 rounded-full"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              y: [0, -30, 0],
-              opacity: [0.2, 0.8, 0.2],
-            }}
-            transition={{
-              duration: 3 + Math.random() * 2,
-              repeat: Infinity,
-              delay: Math.random() * 2,
-            }}
-          />
-        ))}
-      </div>
+          <div className="absolute inset-0 pointer-events-none">
+            {[...Array(isMobile ? 10 : 30)].map((_, i) => (
+              <motion.div
+                key={i}
+                className="absolute w-1 h-1 bg-white/20 rounded-full"
+                style={{
+                  left: `${Math.random() * 100}%`,
+                  top: `${Math.random() * 100}%`,
+                }}
+                animate={{
+                  y: [0, -30, 0],
+                  opacity: [0.2, 0.8, 0.2],
+                }}
+                transition={{
+                  duration: 3 + Math.random() * 2,
+                  repeat: Infinity,
+                  delay: Math.random() * 2,
+                }}
+              />
+            ))}
+          </div>
+        </>
+      )}
 
       <div
         className={`${styles.paddingX} absolute inset-0 top-[80px] sm:top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-3 sm:gap-5 z-10 pointer-events-none`}
@@ -140,9 +157,13 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* ComputersCanvas with more space */}
+      {/* Conditional 3D Canvas */}
       <div className="absolute inset-0 z-0 top-[300px] xs:top-[350px] sm:top-[280px] md:top-[220px] lg:top-[180px] xl:top-[160px]">
-        <ComputersCanvas />
+        <Suspense
+          fallback={<div className="w-full h-full bg-black/20 animate-pulse" />}
+        >
+          <ComputersCanvas />
+        </Suspense>
       </div>
 
       {/* Enhanced scroll indicator */}
