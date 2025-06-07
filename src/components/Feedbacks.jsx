@@ -15,91 +15,43 @@ const FeedbackCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className="group relative bg-gradient-to-br from-[#1a1a2e] via-[#16213e] to-[#0f0f23] p-8 rounded-3xl xs:w-[380px] w-full shadow-2xl hover:shadow-purple-500/10 transition-all duration-500 overflow-hidden border border-gradient-to-r from-purple-500/20 to-cyan-500/20"
+    className="group relative bg-gradient-to-br from-gray-900/50 to-gray-800/30 backdrop-blur-2xl p-10 rounded-[2rem] xs:w-[450px] w-full shadow-2xl hover:shadow-cyan-500/10 transition-all duration-500 border border-gray-700/30 hover:border-cyan-400/40"
   >
-    {/* Animated background elements */}
-    <div className="absolute inset-0 bg-gradient-to-br from-purple-500/5 via-transparent to-cyan-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-    <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-bl from-purple-500/10 to-transparent rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700" />
+    {/* Minimal background accent */}
+    <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-purple-500 via-cyan-500 to-purple-500 rounded-t-[2rem]" />
 
-    {/* Content */}
     <div className="relative z-10">
-      {/* Header with stars and quote */}
-      <div className="flex justify-between items-start mb-6">
-        <div className="flex space-x-1">
-          {[...Array(5)].map((_, i) => (
-            <motion.svg
-              key={i}
-              initial={{ scale: 0, rotate: -180 }}
-              animate={{ scale: 1, rotate: 0 }}
-              transition={{ delay: index * 0.1 + i * 0.1, duration: 0.5 }}
-              className="w-5 h-5 text-yellow-400 fill-current"
-              viewBox="0 0 20 20"
-            >
-              <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-            </motion.svg>
-          ))}
+      {/* Company logo placeholder / rating */}
+      <div className="flex justify-between items-start mb-8">
+        <div className="text-cyan-400 font-mono text-sm tracking-wider">
+          ★★★★★ 5.0
         </div>
-        <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-          <svg
-            className="w-6 h-6 text-white"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h4v10h-10z" />
-          </svg>
+        <div className="w-8 h-8 bg-gradient-to-br from-cyan-500 to-purple-500 rounded-lg flex items-center justify-center">
+          <span className="text-white text-xs font-bold">★</span>
         </div>
       </div>
 
-      {/* Testimonial text */}
-      <div className="mb-8">
-        <p className="text-white/90 text-[17px] leading-8 font-light italic tracking-wide group-hover:text-white transition-colors duration-300">
+      {/* Large testimonial text */}
+      <div className="mb-10">
+        <p className="text-white text-[20px] leading-relaxed font-light tracking-wide">
           &#34;{testimonial}&#34;
         </p>
       </div>
 
-      {/* Separator line */}
-      <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-purple-500/30 to-transparent mb-6" />
-
-      {/* Author info */}
-      <div className="flex items-center gap-5">
+      {/* Clean author section */}
+      <div className="flex items-center gap-4 pt-6 border-t border-gray-700/50">
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-cyan-500 rounded-full blur-md opacity-50 group-hover:opacity-75 transition-opacity duration-300" />
           <img
             src={image}
-            alt={`feedback_by-${name}`}
-            className="relative w-16 h-16 rounded-full object-cover border-2 border-white/20 shadow-xl"
+            alt={name}
+            className="w-14 h-14 rounded-xl object-cover"
           />
-          <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-400 rounded-full border-2 border-[#1a1a2e] shadow-lg" />
+          <div className="absolute -bottom-1 -right-1 w-4 h-4 bg-cyan-400 rounded-full border-2 border-gray-900" />
         </div>
-
         <div className="flex-1">
-          <h4 className="text-white font-bold text-[18px] mb-1 group-hover:text-purple-300 transition-colors duration-300">
-            {name}
-          </h4>
-          <p className="text-purple-300 font-medium text-[14px] mb-1">
-            {designation}
-          </p>
-          <p className="text-white/60 text-[13px] font-light tracking-wider">
-            @ {company}
-          </p>
-        </div>
-
-        {/* Verified badge */}
-        <div className="flex flex-col items-center">
-          <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-full flex items-center justify-center shadow-lg">
-            <svg
-              className="w-4 h-4 text-white"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-            >
-              <path
-                fillRule="evenodd"
-                d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </div>
-          <span className="text-xs text-white/50 mt-1">Verified</span>
+          <h4 className="text-white font-medium text-[17px] mb-1">{name}</h4>
+          <p className="text-gray-400 text-[14px]">{designation}</p>
+          <p className="text-cyan-400 text-[13px] font-medium">{company}</p>
         </div>
       </div>
     </div>
