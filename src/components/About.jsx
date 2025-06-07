@@ -155,14 +155,7 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-6 relative z-10"
       >
-        <motion.p
-          className="text-secondary text-[17px] max-w-3xl leading-[30px] relative p-6 rounded-2xl backdrop-blur-sm bg-white/5 border border-white/10"
-          whileHover={{
-            borderColor: "rgba(168, 85, 247, 0.4)",
-            boxShadow: "0 0 30px rgba(34, 211, 238, 0.1)",
-            transition: { duration: 0.3 },
-          }}
-        >
+        <motion.div className="text-secondary text-[17px] max-w-3xl leading-[30px] relative p-6 rounded-2xl backdrop-blur-sm bg-white/5 border border-white/10">
           <span className="absolute top-0 left-6 w-8 h-0.5 bg-gradient-to-r from-purple-500 to-cyan-500"></span>
           As a seasoned software developer fluent in{" "}
           <motion.span
@@ -228,7 +221,7 @@ const About = () => {
             }}
             transition={{ duration: 5, repeat: Infinity, delay: 2 }}
           />
-        </motion.p>
+        </motion.div>
       </motion.div>
 
       <motion.div
