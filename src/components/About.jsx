@@ -185,12 +185,19 @@ const About = () => {
           >
             Node.js
           </motion.span>
-          , and{" "}
+          ,{" "}
           <motion.span
             className="text-purple-300 font-medium"
             whileHover={{ color: "#67e8f9" }}
           >
             Next.js
+          </motion.span>
+          , and{" "}
+          <motion.span
+            className="text-cyan-500 font-medium"
+            whileHover={{ color: "#9c79beff" }}
+          >
+            Shopify
           </motion.span>
           . With a passion for innovation, I thrive on collaborating closely
           with clients to deliver efficient, scalable, and user-centric

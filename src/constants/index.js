@@ -3,6 +3,7 @@ import {
   react,
   JSD,
   web,
+  shopifyLogo,
   javascript,
   typescript,
   html,
@@ -33,6 +34,8 @@ import {
   SaaS,
   Itransition,
   WebDevXioLogo,
+  Growbig100Logo,
+  ZilancerLogo,
 } from "../assets";
 
 export const navLinks = [
@@ -51,6 +54,10 @@ export const navLinks = [
 ];
 
 const services = [
+  {
+    title: "Shopify Developer",
+    icon: shopifyLogo,
+  },
   {
     title: "Frontend Developer",
     icon: web,
@@ -91,6 +98,10 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Shopify",
+    icon: shopifyLogo,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -126,11 +137,25 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Frontend Developer",
-    company_name: "WebDevXio",
-    icon: WebDevXioLogo,
+    title: "Shopify Developer",
+    company_name: "Zilancer LLC",
+    icon: ZilancerLogo,
     iconBg: "#E6DEDD",
-    date: "May 2025 - Present",
+    date: "September 2025 - Present",
+    points: [
+      "Developed and customized 50+ Shopify stores across multiple industries with a strong focus on conversion, performance, and mobile responsiveness.",
+      "Translated Figma/Adobe XD designs into pixel-perfect Shopify 2.0 storefronts with reusable sections, dynamic product pages, and third-party app integrations (Klarna, Reviews.io, upsell tools).",
+      "Built and customized high-converting store layouts using page builders including PageFly, Replo, GemPages, and EComposer to accelerate delivery across client projects.",
+      "Diagnosed and resolved complex Shopify bugs across themes, apps, and custom code — improving store stability and client satisfaction.",
+      "Optimized store speed, SEO, and UI/UX to deliver high-converting eCommerce experiences for real-world clients.",
+    ],
+  },
+  {
+    title: "Frontend Developer",
+    company_name: "Growbig100 LLC",
+    icon: Growbig100Logo,
+    iconBg: "#383E56",
+    date: "March 2025 - September 2025",
     points: [
       "Developing cutting-edge SaaS applications and client solutions using Next.js, React.js, and modern frontend technologies.",
       "Building responsive, high-performance user interfaces for SaaS platforms with focus on user experience and conversion optimization.",
@@ -139,42 +164,16 @@ const experiences = [
     ],
   },
   {
-    title: "Full Stack Developer",
+    title: "Full Stack Developer Intern",
     company_name: "Itransition",
     icon: Itransition,
     iconBg: "#E6DEDD",
-    date: "Sep 2024 - Mar 2025",
+    date: "Sep 2024 - Nov 2024",
     points: [
       "Developed comprehensive full-stack solutions including multiple landing pages and complex web applications using React.js and Node.js.",
       "Created a sophisticated Google Forms-type website with dynamic form generation, data collection, and analytics features.",
       "Worked on diverse client projects ranging from corporate websites to interactive web applications, ensuring responsive design and optimal performance.",
       "Collaborated with cross-functional teams to deliver projects on time while maintaining high code quality and following industry best practices.",
-    ],
-  },
-  {
-    title: "React.js Developer",
-    company_name: "Upwork",
-    icon: upwork,
-    iconBg: "#383E56",
-    date: "Jan 2023 - Aug 2024",
-    points: [
-      "Leading the development of scalable and responsive web applications using React.js, ensuring high performance and seamless user experiences.",
-      "Implementing robust front-end architectures and state management solutions with Redux for complex applications.",
-      "Collaborating closely with UX/UI designers to translate wireframes and prototypes into polished React components and interactive features.",
-      "Driving innovation by exploring and implementing new tools and libraries within the React ecosystem to enhance productivity and maintainability.",
-    ],
-  },
-  {
-    title: "Front-end Developer",
-    company_name: "Freelancer",
-    icon: freelancer,
-    iconBg: "#E6DEDD",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "As a dynamic Front-end Developer, I spearhead the creation of captivating user interfaces and responsive web applications.",
-      "Armed with a robust skill set in HTML, CSS, and JavaScript, I adeptly implement innovative solutions using frameworks like React.js and Vue.js.",
-      "I lead projects from inception to deployment, optimizing performance and user experience with meticulous attention to detail.",
-      "Collaborating closely with cross-functional teams, I translate complex requirements into intuitive designs that drive user engagement and business success.",
     ],
   },
   {
@@ -188,19 +187,6 @@ const experiences = [
       "Implementing custom solutions on Shopify and leveraging Shogun and Pagefly to maximize store performance and scalability.",
       "Enhancing ecommerce functionality through strategic integration of Shopify apps and themes, boosting site usability and customer engagement.",
       "Collaborating closely with clients to craft tailored ecommerce solutions that achieve business objectives and surpass customer expectations.",
-    ],
-  },
-  {
-    title: "Wordpress Developer",
-    company_name: "Fiverr",
-    icon: fiverr,
-    iconBg: "#E6DEDD",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using Wordpress and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
     ],
   },
 ];

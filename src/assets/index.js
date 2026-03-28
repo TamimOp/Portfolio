@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import favLogo from "./favLogo.png";
 import web from "./web.png";
+import shopifyLogo from "./shopifyLogo.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -27,6 +28,8 @@ import freelancer from "./company/freelancer.png";
 import fiverr from "./company/fiverr.png";
 import Itransition from "./company/Itransition.jpeg";
 import WebDevXioLogo from "./company/WebDevXioLogo.png";
+import Growbig100Logo from "./company/Growbig100Logo.png";
+import ZilancerLogo from "./company/ZilancerLogo.png";
 
 import brainwave from "./brainwave.png";
 import hoobank from "./hoobank.png";
@@ -80,4 +83,7 @@ export {
   SaaS,
   Itransition,
   WebDevXioLogo,
+  Growbig100Logo,
+  ZilancerLogo,
+  shopifyLogo,
 };
